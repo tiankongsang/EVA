@@ -1,47 +1,46 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    backface-visibility: hidden;
-	
-	}
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  backface-visibility: hidden;
+}
 
 #overlay {
-    background-color: #000;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
-    opacity: 0.08;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 0.08;
 }
 
 #scene {
-    padding: 0;
-    margin: 0;
-    width: 115%;
-    height: 120vh;
-    overflow: hidden;
-    top: -5%;
-    left: -5%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+  padding: 0;
+  margin: 0;
+  width: 115%;
+  height: 120vh;
+  overflow: hidden;
+  top: -5%;
+  left: -5%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
 main {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;    
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 101;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .wrapper img {
@@ -50,88 +49,87 @@ main {
 }
 
 .layer {
-    width: 110%;
-    height: 120vh;
-    
+  width: 110%;
+  height: 120vh;
 }
 .layer0 {
-    background-image: url(../img/bg.png);
-	z-index:-1;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -5%;
-    top: -5%;
+  background-image: url(../img/bg.png);
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -5%;
+  top: -5%;
 }
 .layer1 {
-    background-image: url(../img/s1.png);
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -5%;
-    top: -5%;
+  background-image: url(../img/s1.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -5%;
+  top: -5%;
 }
 
 .layer2 {
-    background-image: url(../img/s2.png);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -5%;
-    top: -5%;
+  background-image: url(../img/s2.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -5%;
+  top: -5%;
 }
 
 .layer3 {
-    background-image: url(../img/s3.png);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -5%;
-    top: -5%;
+  background-image: url(../img/s3.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -5%;
+  top: -5%;
 }
 
 .layer4 {
-    background-image: url(../img/s4.png);
+  background-image: url(../img/s4.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -5%;
+  top: -5%;
+}
+
+@media (max-width: 700px) {
+  .layer2 {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 167%;
+    height: 77vh;
+    left: -69%;
+    top: 27%;
+  }
+
+  .layer1 {
     background-position: center;
     background-size: cover;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 115%;
     left: -5%;
-    top: -5%;
-}
+    top: -1%;
+  }
 
-@media (max-width:700px) {
-    .layer2 {
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        width: 167%;
-        height: 77vh;
-        left: -69%;
-        top: 27%;
-    }
-    
-    .layer1 {
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        width: 100%;
-        height: 115%;
-        left: -5%;
-        top: -1%;
-    }    
-    
-    .wrapper img {
-        width: 180px;
-        height: auto;
-    }
+  .wrapper img {
+    width: 180px;
+    height: auto;
+  }
 }
